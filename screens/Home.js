@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Story from '../components/Story';
 import Title from '../components/Title';
 
+
 const { height, width } = Dimensions.get('window')
 
 export default class Home extends Component {

@@ -1,15 +1,11 @@
 import React from 'react'
-import { TabNavigator } from 'react-navigation'
+import { TabNavigator } from 'react-navigation';
 
 import Home from '../screens/Home'
 
-export const Tab = TabNavigator({
-
+export const Tabs = TabNavigator({
     Home: {
-        screen: Home,
-    }
-}, {
+      screen: Home,
+    },
+});
 
-    tabBarPosition: 'bottom',
-    
-})

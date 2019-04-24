@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Home from './screens/Home'
+import { createBottomTabNavigator, createAppContainer } from 'react-navigation';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Home />
       </View>
+      
     );
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -21,3 +24,9 @@ const styles = StyleSheet.create({
 
 
 });
+
+const TabNavigator = createBottomTabNavigator({
+  HomeScreen: { screen: Home },
+});
+
+export default createAppContainer(TabNavigator);
